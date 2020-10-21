@@ -1,2 +1,2 @@
 # selenium-testng-training
-Documents related to the training
+Documents and code related to the training
