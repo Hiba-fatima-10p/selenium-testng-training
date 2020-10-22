@@ -20,9 +20,17 @@ public class pageClass {
         WebElement messageText = driver.findElement(By.id("user-message"));
         messageText.sendKeys(message);
         WebElement button = driver.findElement(By.className("btn-default"));
-        button.click();
+        clickElement(button);
         WebElement currentText = driver.findElement(By.id("display"));
-        String text = currentText.getText();
+        String text = getText(currentText);
         return text;
+    }
+
+    public void clickElement(WebElement element){
+        element.click();
+    }
+
+    public String getText(WebElement element){
+        return element.getText();
     }
 }

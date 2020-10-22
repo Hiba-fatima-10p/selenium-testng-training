@@ -12,10 +12,9 @@ public class main {
         //Pre-req
         WebDriver driver = page.setup();
 
-        //Test case
+        //Test steps
         String messagetext = "Selenium Training";
         String text = page.getMessage(messagetext);
-        System.out.println(text);
 
         //validation
         if(messagetext.equals(text)){
